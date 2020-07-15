@@ -1,4 +1,5 @@
 const MCQ = require('../models/MCQ');
+const User = require('../models/User');
 
 const getMCQs = async (req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
@@ -60,5 +61,5 @@ const getOneMCQ = async (req, res, next) => {
 
 module.exports = {
     getMCQs,
-    getOneMCQ
+    getOneMCQ,
 };
